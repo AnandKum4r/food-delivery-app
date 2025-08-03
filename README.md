@@ -17,8 +17,6 @@
 - ➕ **Add to Cart:** Add items with quantity control.
 - 🛒 **Cart Page:** View selected items, update quantities, remove items.
 - 💳 **Checkout Page:** Bonus page for placing order (no payment logic).
-- 🌗 **Dark Mode Support:** Seamless light/dark theming.
-- 🎨 **Framer Motion Animations:** Smooth transitions for enhanced UX.
 - 🔁 **Reusable Components:** Modular design for scalability and maintenance.
 
 ---
@@ -29,8 +27,6 @@
 - 💨 Tailwind CSS
 - 🧭 React Router
 - 💾 useContext (Cart State Management)
-- 🌗 Tailwind Dark Mode
-- 🌀 Framer Motion (Animations)
 - ⚡ Vite (Fast dev server & bundler)
 
 ---
@@ -63,7 +59,7 @@ src/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YourUsername/FoodRush.git
+   git clone [https://github.com/YourUsername/FoodRush.git](https://github.com/AnandKum4r/Food-Delivery-App.git)
    cd FoodRush
    ```
 
