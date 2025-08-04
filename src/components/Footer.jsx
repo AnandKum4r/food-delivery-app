@@ -16,9 +16,6 @@ const Footer = () => {
           <a href="/menu" className="hover:text-red-400 transition">
             Menu
           </a>
-          <a href="/cart" className="hover:text-red-400 transition">
-            Cart
-          </a>
           <a
             href="https://github.com/AnandKum4r"
             className="hover:text-red-400 transition"

@@ -1,5 +1,6 @@
 import Button from "../components/Button";
 import { useCart } from "../context/CartContext";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cartItems, increaseQty, decreaseQty, removeFromCart, total } =
@@ -63,7 +64,9 @@ const Cart = () => {
             <p className="text-lg font-semibold mb-2">
               Total: ₹<span>{total}</span>
             </p>
-            <Button className="w-full sm:w-auto">Proceed to Checkout</Button>
+            <Link to="/checkout">
+              <Button className="w-full sm:w-auto">Proceed to Checkout</Button>
+            </Link>
           </div>
         </div>
       )}
