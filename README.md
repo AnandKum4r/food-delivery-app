@@ -1,12 +1,84 @@
-# React + Vite
+# 🍔 FoodRush - Food Delivery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 **Live Demo:** https://food-delivery-app-xi-one.vercel.app/
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Introduction
 
-## Expanding the ESLint configuration
+**FoodRush** is a responsive food delivery web app built using **React + Vite** and **Tailwind CSS**. The app is designed to simulate a smooth online ordering experience for a restaurant brand. Users can browse menus, add items to a cart, and proceed to checkout — all in a clean, mobile-first interface.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Features
+
+- 🏠 **Home Page:** Promotions banner, category filter, and featured items.
+- 📋 **Menu Page:** View all food items with filtering by category.
+- ➕ **Add to Cart:** Add items with quantity control.
+- 🛒 **Cart Page:** View selected items, update quantities, remove items.
+- 💳 **Checkout Page:** Bonus page for placing order (no payment logic).
+- 🔁 **Reusable Components:** Modular design for scalability and maintenance.
+
+---
+
+## 🛠 Technologies Used
+
+- ⚛️ React.js
+- 💨 Tailwind CSS
+- 🧭 React Router
+- 💾 useContext (Cart State Management)
+- ⚡ Vite (Fast dev server & bundler)
+
+---
+
+## 🗂️ Pages Overview
+
+| Page       | Description                                  |
+|------------|----------------------------------------------|
+| `/`        | Home page with banner and featured food      |
+| `/menu`    | All food items with category filters         |
+| `/cart`    | Cart items with quantity adjustment          |
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/        # UI Components (Navbar, Footer, Button, FoodCard)
+├── context/           # Cart Context with state logic
+├── pages/             # Page views (Home, Menu, Cart, Checkout)
+├── assets/            # Icons/images
+├── App.jsx            # Root component
+└── main.jsx           # Entry point
+```
+
+---
+
+## 🚀 Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/YourUsername/FoodRush.git](https://github.com/AnandKum4r/Food-Delivery-App.git)
+   cd FoodRush
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Visit in your browser:**
+   [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🙌 Credits
+
+Built with ❤️ by Anand Kumar — React Developer  
+Inspired by modern food delivery UI/UX.
