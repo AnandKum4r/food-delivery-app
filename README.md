@@ -59,7 +59,7 @@ src/
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YourUsername/FoodRush.git](https://github.com/AnandKum4r/Food-Delivery-App.git)
+   git clone (https://github.com/AnandKum4r/Food-Delivery-App.git)
    cd FoodRush
    ```
 
