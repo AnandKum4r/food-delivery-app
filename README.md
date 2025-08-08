@@ -59,7 +59,7 @@ src/
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YourUsername/FoodRush.git](https://github.com/AnandKum4r/Food-Delivery-App.git)
+   git clone https://github.com/AnandKum4r/Food-Delivery-App.git
    cd FoodRush
    ```
 
@@ -80,5 +80,4 @@ src/
 
 ## 🙌 Credits
 
-Built with ❤️ by Anand Kumar — React Developer  
-Inspired by modern food delivery UI/UX.
+Built with ❤️ by Anand Kumar — React Developer.
