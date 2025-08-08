@@ -16,7 +16,8 @@ const Checkout = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    setForm({ ...form, [e.target.name]: e.target.value });
+    // e.preventDefault();
 
     // Simple validation
     if (!form.name || !form.address || !form.phone) {

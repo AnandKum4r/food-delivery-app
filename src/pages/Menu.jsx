@@ -156,6 +156,7 @@ const Menu = () => {
             </button>
           ))}
         </div>
+        
       </section>
 
       {/* 🧆 Food Items Grid */}

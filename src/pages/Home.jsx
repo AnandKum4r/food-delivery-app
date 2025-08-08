@@ -54,6 +54,7 @@ const featuredItems = [
 
 const Home = () => {
   const { addToCart } = useCart(); // ✅ Cart function
+  // const {Button} = useCart();
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   // ✅ Filter based on selected category
@@ -63,51 +64,57 @@ const Home = () => {
       : featuredItems.filter((item) => item.category === selectedCategory);
 
   return (
-    <div className="space-y-6">
-      {/* 🎯 Banner Section */}
-      <section className="bg-red-500 text-white rounded-xl px-8 py-10 text-center shadow-md">
-        <h1 className="text-4xl font-bold mb-2">
-          Delicious Food Delivered Fast 🚀
-        </h1>
-        <p className="text-lg mb-4">Get 20% OFF on your first order today!</p>
-        <Button className="bg-red-400 text-white hover:text-white hover:bg-red-600 font-semibold">
-          Order Now
-        </Button>
-      </section>
+    <>
+      <div className="space-y-6">
+        {/* 🎯 Banner Section */}
+        <section className="bg-red-500 text-white rounded-xl px-8 py-10 text-center shadow-md">
+          <h1 className="text-4xl font-bold mb-2">
+            Delicious Food Delivered Fast 🚀
+          </h1>
+          <p className="text-lg mb-4">Get 20% OFF on your first order today!</p>
+          <Button className="bg-red-400 text-white hover:text-white hover:bg-red-600 font-semibold">
+            Order Now
+          </Button>
+        </section>
 
-      {/* 🍽️ Categories */}
-      <section>
-        <h2 className="text-3xl font-extrabold text-red-600 mb-4">
-          Browse by Category
-        </h2>
-        <div className="flex flex-wrap gap-4">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 rounded-full border transition font-medium
+        {/* 🍽️ Categories */}
+        <section>
+          <h2 className="text-3xl font-extrabold text-red-600 mb-4">
+            Browse by Category
+          </h2>
+          <div className="flex flex-wrap gap-4">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`px-6 py-2 rounded-full border transition font-medium
               ${
                 selectedCategory === category
                   ? "bg-red-500 text-white"
                   : "bg-white text-gray-700 hover:bg-red-100"
               }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-      </section>
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </section>
 
-      {/* 🌟 Featured Items */}
-      <section>
-        <h2 className="text-2xl font-bold mb-4 text-gray-800">Popular Items</h2>
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-          {filteredItems.map((item) => (
-            <FoodCard key={item.id} item={item} onAdd={addToCart} />
-          ))}
-        </div>
-      </section>
-    </div>
+        {/* 🌟 Featured Items */}
+        <section>
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">
+            Popular Items
+          </h2>
+          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            {filteredItems.map((item) => (
+              <FoodCard key={item.id} item={item} onAdd={addToCart} />
+              
+            ))}
+            
+          </div>
+        </section>
+      </div>
+    </>
   );
 };
 

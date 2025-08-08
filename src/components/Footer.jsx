@@ -1,3 +1,9 @@
+// Footer component displayed at the bottom of the page.
+// It contains three sections:
+// 1. Branding (Left) – App name and tagline.
+// 2. Navigation Links (Center) – Links to pages and external profiles.
+// 3. Copyright (Right) – Current year and developer name.
+
 const Footer = () => {
   return (
     <footer className="bg-[#1c1c1e] text-gray-300 py-6 mt-12 border-t border-gray-700">
