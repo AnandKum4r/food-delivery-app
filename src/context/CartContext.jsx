@@ -1,23 +1,3 @@
-// This file sets up a global Cart context using React's Context API.
-// It allows the cart state (items, total, and functions) to be accessed and updated from any component in the app.
-
-// ✅ createContext: Creates a context for the cart
-// ✅ useCart: A custom hook to access the cart context easily
-// ✅ CartProvider: Provides the cart state and functions to all child components
-
-// State managed:
-// - cartItems: array of items in the cart
-// - total: total price of items
-
-// Functions provided:
-// - addToCart: Adds a new item or increases quantity if already in cart
-// - removeFromCart: Removes item from cart by ID
-// - increaseQty: Increases quantity of a specific item
-// - decreaseQty: Decreases quantity (and removes item if quantity is 0)
-// - clearCart: Empties the entire cart
-
-// The provider wraps around the app (or required component tree), so any component can access the cart using useCart()
-
 import { createContext, useContext, useState } from "react";
 
 const CartContext = createContext();

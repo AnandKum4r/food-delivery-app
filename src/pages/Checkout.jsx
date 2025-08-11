@@ -3,7 +3,7 @@ import Button from "../components/Button";
 import { useState } from "react";
 
 const Checkout = () => {
-  const { cartItems, total } = useCart();
+  const { cartItems, total, clearCart } = useCart();
 
   const [form, setForm] = useState({
     name: "",
@@ -16,8 +16,8 @@ const Checkout = () => {
   };
 
   const handleSubmit = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    // e.preventDefault();
+    e.preventDefault();
+    // setForm({ ...form, [e.target.name]: e.target.value });
 
     // Simple validation
     if (!form.name || !form.address || !form.phone) {
@@ -28,6 +28,8 @@ const Checkout = () => {
     // 🧾 Simulate order placed
     alert(`Order placed successfully! 🍕\nThank you, ${form.name}`);
     setForm({ name: "", address: "", phone: "" });
+
+    clearCart();
   };
 
   return (
